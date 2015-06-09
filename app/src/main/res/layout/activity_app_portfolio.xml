@@ -4,13 +4,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".appPortfolio"
-    android:background="#ffc5ecff"
+    android:background="@color/BackgroundBlue"
     android:clickable="false">
 
     <TextView android:text="@string/my_title" android:layout_width="fill_parent"
         android:layout_height="wrap_content" android:gravity="center" android:textSize="24sp"
         android:autoText="false"
-        android:id="@+id/textView"
+        android:id="@+id/mainHeading"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="32dp" />
@@ -24,11 +24,9 @@
             android:layout_height="wrap_content"
             android:gravity="center">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:text="@string/media_streamer"
                 android:id="@+id/button"
-                android:backgroundTint="#F08C35"
                 android:onClick="media_streamer" />
         </TableRow>
         <TableRow
@@ -36,11 +34,9 @@
             android:layout_height="wrap_content"
             android:gravity="center">
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
             android:text="@string/super_duo1"
             android:id="@+id/button2"
-            android:backgroundTint="#F08C35"
             android:onClick="super_duo1" />
         </TableRow>
         <TableRow
@@ -48,11 +44,9 @@
             android:layout_height="wrap_content"
             android:gravity="center">
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
             android:text="@string/super_duo2"
             android:id="@+id/button3"
-            android:backgroundTint="#F08C35"
             android:onClick="super_duo2" />
         </TableRow>
         <TableRow
@@ -60,11 +54,9 @@
             android:layout_height="wrap_content"
             android:gravity="center">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:text="@string/ant_terminator"
                 android:id="@+id/button4"
-                android:backgroundTint="#F08C35"
                 android:onClick="ant_terminator" />
         </TableRow>
         <TableRow
@@ -72,11 +64,9 @@
             android:layout_height="wrap_content"
             android:gravity="center">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:text="@string/materialize"
                 android:id="@+id/button5"
-                android:backgroundTint="#F08C35"
                 android:onClick="materialize" />
         </TableRow>
         <TableRow
@@ -84,11 +74,10 @@
             android:layout_height="wrap_content"
             android:gravity="center">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:text="@string/capstone"
                 android:id="@+id/button6"
-                android:backgroundTint="#fff0537c"
+                android:backgroundTint="@color/CapstoneMagenta"
                 android:onClick="capstone" />
         </TableRow>
 </TableLayout>
